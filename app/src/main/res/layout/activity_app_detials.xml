@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppDetialsActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@mipmap/ic_launcher"
+        android:id="@+id/applicationIconId"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/applicationIconId"
+        android:id="@+id/dlAppNameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Chrome"/>
+
+    <Button
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:id="@+id/launchAppButtonId"
+        android:background="@drawable/ic_baseline_launch"
+        android:layout_below="@+id/applicationIconId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp" />
+    <Button
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:id="@+id/settingsAppButtonId"
+        android:background="@drawable/ic_baseline_settings_24"
+        android:layout_below="@+id/applicationIconId"
+        android:layout_toRightOf="@+id/launchAppButtonId"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textId"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:text="The below permissions are used by the developer in the app developement."
+        android:layout_below="@id/launchAppButtonId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical"/>
+
+    <TextView
+        android:id="@+id/dlAppPermissionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="13dp"
+        android:layout_above="@+id/adBottomNavigationBarId"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adBottomNavigationBarId"
+        app:menu="@menu/menu_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

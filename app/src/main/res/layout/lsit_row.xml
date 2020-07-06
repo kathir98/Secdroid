@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/appIconId"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent">
+            </ImageView>
+            <TextView
+                android:id="@+id/appNameId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appname"
+                android:layout_toRightOf="@id/appIconId"
+                android:paddingLeft="12dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/appPermissionId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permision"
+                android:paddingTop="9dp"
+                android:paddingLeft="12dp"
+                android:layout_toRightOf="@+id/appIconId"
+                android:layout_below="@id/appNameId"
+                android:textSize="13dp"
+                android:textStyle="italic"/>
+
+            <TableRow
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="10dp">
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/scanButtonId"
+                    android:background="@drawable/ic_outline_search_24"/>
+            </TableRow>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

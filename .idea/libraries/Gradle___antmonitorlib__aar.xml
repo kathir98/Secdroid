@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: :antmonitorlib:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a39f3bf00487a0bcf06b9a739739039/jetified-antmonitorlib/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a39f3bf00487a0bcf06b9a739739039/jetified-antmonitorlib/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a39f3bf00487a0bcf06b9a739739039/jetified-antmonitorlib/jars/libs/bc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a39f3bf00487a0bcf06b9a739739039/jetified-antmonitorlib/jars/libs/sandroproxylib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

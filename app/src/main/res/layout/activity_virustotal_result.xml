@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VirustotalResultActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/barId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:paddingBottom="5dp">
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/fileicon"
+            android:paddingLeft="5dp"
+            android:paddingRight="8dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/fileNameHolderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filename"
+            android:paddingTop="15dp"
+            android:paddingLeft="7dp"
+            tools:ignore="MissingConstraints" />
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/viruswarning"
+            android:paddingLeft="5dp"
+            android:paddingRight="8dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/positivesHolderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filename"
+            android:paddingTop="15dp"
+            android:paddingLeft="7dp"
+            tools:ignore="MissingConstraints" />
+    </TableRow>
+</RelativeLayout>
+
+
+<androidx.recyclerview.widget.RecyclerView
+android:paddingTop="10dp"
+android:layout_below="@+id/barId"
+android:id="@+id/vRecyclerViewId"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:layout_editor_absoluteX="0dp"
+tools:layout_editor_absoluteY="0dp"
+android:layout_above="@+id/vBottomNavigationBarId"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vBottomNavigationBarId"
+        app:menu="@menu/menu_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"/>
+
+
+</RelativeLayout>

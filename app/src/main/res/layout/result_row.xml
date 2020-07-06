@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/cardview_compat_inset_shadow"
+        android:id="@+id/cardViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/avNameId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kaspersky"
+                android:paddingLeft="12dp"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/vNameId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Torjan horse"
+                android:paddingTop="9dp"
+                android:paddingLeft="12dp"
+                android:layout_below="@id/avNameId"
+                android:textSize="13dp"
+                android:textStyle="italic"/>
+
+            <TableRow
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignBottom="@+id/vNameId">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/symbolId"
+                    android:background="@drawable/clean" />
+            </TableRow>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

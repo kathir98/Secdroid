@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_compat_inset_shadow">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/tappIconId"
+                />
+
+            <TextView
+                android:id="@+id/tappNameId"
+                android:layout_toRightOf="@+id/tappIconId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AppName"
+                android:paddingLeft="12dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="192.168.0.0"
+                android:id="@+id/tdestIpId"
+                android:layout_below="@+id/tappNameId"
+                android:layout_toRightOf="@+id/tappIconId"
+                android:paddingLeft="15dp"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:paddingTop="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tdestPortId"
+                android:text="443"
+                android:layout_toRightOf="@id/tdestIpId"
+                android:layout_below="@id/tappNameId"
+                android:paddingLeft="15dp"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:paddingTop="10dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tprotocol"
+                android:text="UDP"
+                android:layout_below="@id/tappNameId"
+                android:layout_toRightOf="@id/tdestPortId"
+                android:paddingLeft="15dp"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:paddingTop="10dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dec 2 2019 13:59:02"
+                android:id="@+id/ttimeId"
+                android:layout_below="@id/tdestIpId"
+                android:layout_toRightOf="@id/tappIconId"
+                android:paddingLeft="15dp"
+                android:paddingTop="8dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
